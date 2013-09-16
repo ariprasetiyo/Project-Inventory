@@ -1,0 +1,8 @@
+*
+* Mengcrate untuk menghubungkan satu tabel dengan tabel yang lain jika di hapus maka akan di hapus semua
+* 
+ALTER TABLE `sys_usergroups` ADD FOREIGN KEY ( `username` ) REFERENCES `itbsp`.`sys_user` (
+`username`
+) ON DELETE CASCADE ON UPDATE CASCADE ;
+
+
